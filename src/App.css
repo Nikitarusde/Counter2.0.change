@@ -1,38 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #040C18;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 80px;
+    border: 4px solid #1970D0;
+    box-sizing: border-box;
+    height: 240px;
+    width: 352px;
+    border-radius: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blockInput {
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.blockText {
+    color: #FF4820;
+    font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: none;
+    border: 2px solid #1970D0;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 5px;
+    height: 40px;
+    width: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputError {
+    font-size: 16px;
+    text-align: center;
+    color: #FF4820;
+    background: none;
+    border: 2px solid #FF4820;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 5px;
+    height: 40px;
+    width: 250px;
 }
+
+.counter {
+    border: 4px solid #1970D0;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    padding: 20px;
+    height: 240px;
+    width: 352px;
+}
+
+.containerCounter {
+    border: 4px solid #1970D0;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.containerCounterError {
+    border: 4px solid #FF4820;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.numberCounter {
+    font-size: 50px;
+}
+
+
+.button {
+    width: 140px;
+    height: 40px;
+    margin: 6px;
+    color: #719BC4;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: 3px solid #719BC4;
+}
+
+.error {
+    color: #FF4820;
+    font-size: 50px;
+}
+
+.errorText {
+    color: #FF4820;
+    font-size: 28px;
+}
+
+.disable{
+    width: 140px;
+    height: 40px;
+    margin: 6px;
+    color: #FFFFFF;
+    background: #FF4820;
+    border-radius: 30px;
+    border: 2px solid #FF0000;
+}
+
